@@ -26,6 +26,7 @@ function App() {
           myImage.setAttribute("src", imageUrl)
           myImage.setAttribute("width", "200px")
           myImage.setAttribute("height", "200px")
+          myImage.setAttribute("border", "2px solid transperant")
           var myDiv = document.getElementById("div")
           myDiv.append(myImage)
         })
@@ -44,10 +45,10 @@ function App() {
 
   return (
    <div className='maindiv'>
-    <p>Search Images</p>
-     s:<input className='input' type="text" onChange={collectIt}/><br/><br/>
-    <button className='btn' onClick={sendData}>Submit</button><br/><br/>
-    <button className='btn' onClick={clearIt}>Clear</button>
+    <p>Search Images</p>   
+    <input className='input' placeholder='Enter Text' type="search" onChange={collectIt}/><br/><br/>
+    <button className='btn' type='submit' onClick={sendData}>Submit</button><br/><br/>
+    <button className='btnclr' onClick={clearIt}>Clear Images</button>
     <div id='div'>
       {/* This div tag will hold all the images */}
 
