@@ -4,6 +4,9 @@
 .input{
   caret-color: red;
 }
+body{
+  background-color: lavenderblush;
+}
 .maindiv p{
     color: #0075c9; 
     background-image: linear-gradient(to right,#80bc00,#0075c9);
